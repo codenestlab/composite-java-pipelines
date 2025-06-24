@@ -8,7 +8,7 @@
 		<version>3.5.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>org.codeenestlab</groupId>
+	<groupId>org.codenestlab</groupId>
 	<artifactId>java_devops</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
