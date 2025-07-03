@@ -12,18 +12,13 @@ permissions:
 jobs:
   # 1: Build - tests ##
   build:
-   uses: java-cicd-pipelines/java-reusable-pipelines/.github/workflows/build-pipeline.yml@main
+   uses: codenest/reusable-java-pipelines/.github/workflows/build-pipeline.yml@main
    secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
-  # #2: Deploy to GitHub Packages ##
-  # deploy:
-  #  needs: build
-  #  uses: java-cicd-pipelines/java-reusable-pipelines/.github/workflows/package-deploy.yml@main
 
   #3: Deploy to Docker ##
   deploy-docker:
    needs: build
-   uses: java-cicd-pipelines/java-reusable-pipelines/.github/workflows/docker-deploy.yml@main
+   uses: codenest/reusable-java-pipelines/.github/workflows/docker-deploy.yml@main
    
   
