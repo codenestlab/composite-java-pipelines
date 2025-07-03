@@ -12,7 +12,7 @@ permissions:
 jobs:
   # 1: Build - tests ##
   build:
-   uses: java-cicd-pipelines/java-reusable-pipelines/.github/workflows/build-pipeline.yml@main
+   uses: codenestlab/reusable-java-pipelines/.github/workflows/build-pipeline.yml@main
    secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
