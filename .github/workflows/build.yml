@@ -19,12 +19,12 @@ jobs:
   #2: Deploy to Docker ##
   deploy-docker:
     needs: build
-    uses: java-cicd-pipelines/java-reusable-pipelines/.github/workflows/docker-deploy.yml@main
+    uses: codenestlab/reusable-java-pipelines/.github/workflows/docker-deploy.yml@main
 
-  #3: deploy to azure web app ##
-  deploy-azure:
-    needs: build
-    uses: java-cicd-pipelines/java-reusable-pipelines/.github/workflows/azure-deploy.yml@main
+  # #3: deploy to azure web app ##
+  # deploy-azure:
+  #   needs: build
+  #   uses: codenestlab/reusable-java-pipelines/.github/workflows/azure-deploy.yml@main
 
    
   
